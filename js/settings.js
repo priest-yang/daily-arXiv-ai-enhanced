@@ -19,7 +19,8 @@ function loadKeywordPreferences() {
   
   // 获取保存的关键词，如果没有则使用默认关键词
   let savedKeywords = localStorage.getItem('preferredKeywords');
-  let keywords = []; // 默认无关键词
+  // let keywords = []; // 默认无关键词
+  let keywords = ['Embodied AI', 'Manipulation', 'Locomotion', 'Reinforcement Learning', 'Post-training']; 
   
   if (savedKeywords) {
     try {
@@ -47,7 +48,7 @@ function loadAuthorPreferences() {
   
   // 获取保存的作者，如果没有则为空数组
   let savedAuthors = localStorage.getItem('preferredAuthors');
-  let authors = []; // 默认无作者
+  let authors = ['Sergey Levine']; // 默认无作者
   
   if (savedAuthors) {
     try {
